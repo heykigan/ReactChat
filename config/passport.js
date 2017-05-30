@@ -2,7 +2,7 @@ var FacebookStrategy = require('passport-facebook').Strategy;
 var LocalStrategy = require('passport-local').Strategy;
 var User = require('../src/server/models/User');
 
-var host = process.env.NODE_ENV !== 'production' ? 'localhost:3000' : 'slackclone.herokuapp.com'
+var host = process.env.NODE_ENV !== 'production' ? 'localhost:3000' : 'npchat.herokuapp.com'
 if (process.env.NODE_ENV !== 'production') {
   var oAuthConfig = require('./oAuthConfig.dev');
 } else {
